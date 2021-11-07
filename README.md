@@ -2,15 +2,18 @@
 
 ## Project Name
 
-The name of your project.
+HunterNotes
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+I'm making an application for the game "Monster Hunter World" that will allow you to search a specific monster and display information regarding it such as location, weaknesses, and rewards for hunting it.
 
 ## API and Data Sample
 
 Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+
+API: https://mhw-db.com/ 
+![API Sample] (./project_imgs.APIsample.jpg)
 
 ## Wireframes
 
