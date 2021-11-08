@@ -63,7 +63,7 @@ Post-MVP
 
 ## **Priority Matrix**
 
-![Priority Maxtrix](/project_imgs/priority_matrix.png)
+![Priority Maxtrix](/Project_Imgs/Priority_Matrix.png)
 
 ## **Timeframes**
 
