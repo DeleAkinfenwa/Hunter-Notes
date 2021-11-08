@@ -2,7 +2,7 @@
 
 ## **Project Name**
 
-Sapphire Star
+Hunter Notes
 
 ## **Project Description**
 
@@ -41,7 +41,8 @@ MVP
 
 Post-MVP  
 
-- [ ] a filter menu to allow user to pick which type information is displayed
+- [ ] Hover over Ailments to show a pop up window describing how to remove it
+- [ ] a filter menu to allow user to pick which type of information is displayed
 - [ ] hamburger menu to mobile version allowing user to pick which type information is displayed
 - [ ] allow user to pick a random monster
 - [ ] include a section that displays what armor and weapons can be made from that monster
