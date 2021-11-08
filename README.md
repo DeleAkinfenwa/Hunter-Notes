@@ -1,82 +1,92 @@
 # Project Overview
 
-## Project Name
+## **Project Name**
 
-HunterNotes
+Sapphire Star
 
-## Project Description
+## **Project Description**
 
 I'm making an application for the game "Monster Hunter World" that will allow you to search a specific monster and display information regarding it such as location, weaknesses, and rewards for hunting it.
 
-## API and Data Sample
+Here are some websites with a similar concept:
+- https://scryfall.com (Magic the Gathering)
+- https://bulbapedia.bulbagarden.net/wiki/Main_Page (Pokemon)
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+## **API and Data Sample**
 
-API: https://mhw-db.com/ 
-![API Sample] (./project_imgs.APIsample.jpg)
+API: https://mhw-db.com/
 
-## Wireframes
+![API Sample](/Project_Imgs/APIsample.png)
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
 
-### MVP/PostMVP
+## **Wireframes**
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+This is the wire frame for a desktop version. It'll feature a search bar/dropdown bar that will list all the monsters in the game. Each section will display a portion of the data about that specific monster
 
-#### MVP 
-*These are examples only. Replace with your own MVP features.*
+![Windowed Wireframe](/Project_Imgs/Wireframe_Desktop.png)
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
 
-#### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
+The mobile verison will have a very similar look but the lay out will have each information section stacked in order to keep the contents readable and properly formated
 
-- Add second API
-- Use local storage to save user favorites
+![Mobile Wireframe](/Project_Imgs/Wireframe_Mobile.png)
 
-## Project Schedule
+### **Minimum Viable Product(MVP) & Post-MVP**
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
+MVP
 
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
+- [ ] connect API to application
+- [ ] Allow user to search a monster name via typing or using the dropbox
+- [ ] Display monster data in appropriate sections
+
+
+Post-MVP  
+
+- [ ] a filter menu to allow user to pick which type information is displayed
+- [ ] hamburger menu to mobile version allowing user to pick which type information is displayed
+- [ ] allow user to pick a random monster
+- [ ] include a section that displays what armor and weapons can be made from that monster
+- [ ] images for each monster
+- [ ] icons to each element/ailment
+
+## **Project Schedule**
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project Approval | Incomplete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
-|July 17| Presentations | Incomplete
+|Nov 7| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|Nov 8| Project Approval | Incomplete
+|Nov 9| Core Application Structure (HTML, CSS, JS) | Incomplete
+|Nov 10| All necessary information sorted and displayed in the appropriate sections| Incomplete
+|Nov 11| Apply styling to the application| Incomplete
+|Nov 12| MVP* App styled for both desktop and mobile | Incomplete
+|Nov 15| Presentations | Incomplete
 
-## Priority Matrix
+## **Priority Matrix**
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+![Priority Maxtrix](/project_imgs/priority_matrix.png)
 
-## Timeframes
+## **Timeframes**
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
+| Component | Priority | Estimated Time | Actual Time 
+| --- | :---: |  :---: | :---: | 
+| Core Code(HTML,CSS,etc) | H | 2 hrs| ___hrs |
+| Working with API | H | 3 hrs| ___hrs |
+| Create Header and search/dropbox | H | 3 hrs| ___hrs | 
+| Set up working search/dropbox with API| H | 2 hrs| ___hrs | 
+| Create algorithm to pull needed info | H | 4 hrs| ___hrs | 
+| Create divs for each info category | H | 2 hrs| ___hrs | 
+| Display info in appropriate sections | H | 4 hrs| ___hrs | 
+| Organizing info within each section | M | 4 hrs| ___hrs | 
+| Styling each section for desktop| L | 3 hrs| ___hrs |
+| Styling each section for mobile| L | 2 hrs| ___hrs |
+| Total | ___ | 29 hrs| ___hrs | 
 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
-
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
-
-## Code Snippet
-
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+## **Code Snippet**
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+ N/A
 ```
 
-## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+## **Change Log**
+ -
+ -
+ -  
