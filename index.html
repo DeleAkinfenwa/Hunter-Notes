@@ -6,13 +6,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HunterDex</title>
-  <script src='index.html'></script>
-  <link rel='stylesheet' src='style.css'>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script defer src="./script.js"></script>
+
+  <link rel='stylesheet' href='style.css'>
 
 </head>
 
 <body>
-
+  <header>
+    <h1>Hunter Notes</h1>
+    <form class='searchbar'>
+      <select id='name-selector'>
+        <option selected disabled hidden>Pick a monster</option>
+      </select>
+      <form>
+        <button type='submit' id='search'></button>
+  </header>
+  <div class='monsterData'>
+    <div id='description'>
+      <h3>Description</h3>
+    </div>
+    <div id='location'>
+      <h3>Location</h3>
+    </div>
+    <div id='weakResist'>
+      <h3>Weakness & Resistance</h3>
+    </div>
+    <div id='eleAil'>
+      <h3>Elements & Ailments</h3>
+    </div>
+    <div id='rewardLow'>
+      <h3>Low Rank Rewards</h3>
+    </div>
+    <div id='rewardHigh'>
+      <h3>High Rank Rewards</h3>
+    </div>
+  </div>
 </body>
 
 </html>

@@ -41,7 +41,7 @@ MVP
 
 Post-MVP  
 
-- [ ] Hover over Ailments to show a pop up window describing how to remove it
+- [ ] Hover over Ailments to show a tooltip describing how to remove it
 - [ ] a filter menu to allow user to pick which type of information is displayed
 - [ ] hamburger menu to mobile version allowing user to pick which type information is displayed
 - [ ] allow user to pick a random monster
@@ -54,7 +54,7 @@ Post-MVP
 |  Day | Deliverable | Status
 |---|---| ---|
 |Nov 7| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-|Nov 8| Project Approval | Incomplete
+|Nov 8| Project Approval | Complete
 |Nov 9| Core Application Structure (HTML, CSS, JS) | Incomplete
 |Nov 10| All necessary information sorted and displayed in the appropriate sections| Incomplete
 |Nov 11| Apply styling to the application| Incomplete
@@ -69,7 +69,7 @@ Post-MVP
 
 | Component | Priority | Estimated Time | Actual Time 
 | --- | :---: |  :---: | :---: | 
-| Core Code(HTML,CSS,etc) | H | 2 hrs| ___hrs |
+| Core Code(HTML,CSS,etc) | H | 2 hrs| 1.5 hrs |
 | Working with API | H | 3 hrs| ___hrs |
 | Create Header and search/dropbox | H | 3 hrs| ___hrs | 
 | Set up working search/dropbox with API| H | 2 hrs| ___hrs | 
@@ -77,7 +77,7 @@ Post-MVP
 | Create divs for each info category | H | 2 hrs| ___hrs | 
 | Display info in appropriate sections | H | 4 hrs| ___hrs | 
 | Organizing info within each section | M | 4 hrs| ___hrs | 
-| Styling each section for desktop| L | 3 hrs| ___hrs |
+| Styling each section for desktop| L | 3 hrs| 1.5 hrs |
 | Styling each section for mobile| L | 2 hrs| ___hrs |
 | Total | ___ | 29 hrs| ___hrs | 
 

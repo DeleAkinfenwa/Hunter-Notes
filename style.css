@@ -1,0 +1,93 @@
+body {
+  background-color: blue;
+  text-align: center;
+
+}
+header{
+  background-color: grey;
+  text-align: center;
+  height: 200px;
+
+  flex: auto;
+  
+}
+h1 {
+  background-color: darkgreen;
+  
+}
+
+h3 {
+  background-color: fuchsia;
+}
+
+.searchbar{
+  background-color: darkred;
+  width: 300px;
+  height: 75px;
+  margin: 0 auto;
+
+}
+
+#name-selector {
+  margin-top:20px;
+  size;
+}
+
+#search {
+
+}
+
+.monsterData{
+  background-color: darkorange;
+  width: 90%;
+  margin: 0 5%;
+  
+}
+
+#description {
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  margin: 20px;
+  background-color: cornsilk;
+}
+
+#location {
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  margin: 20px;
+  background-color: cornsilk;
+}
+
+#weakResist {
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  margin: 20px;
+  background-color: cornsilk;
+}
+
+#eleAil {
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  margin: 20px;
+  background-color: cornsilk;
+}
+
+#rewardLow {
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  margin: 20px;
+  background-color: cornsilk;
+}
+
+#rewardHigh {
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  margin: 20px;
+  background-color: cornsilk;
+}
