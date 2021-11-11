@@ -9,7 +9,7 @@ async function getMonster() {
     const searchResults = await axios.get('https://mhw-db.com/monsters');
 
     let monsterData = searchResults.data
-    // console.log(monsterData)
+    console.log(monsterData)
     setNameList(monsterData)
   } catch (error) {
     console.log(error)
@@ -79,16 +79,15 @@ async function getOneMon(monsterId) {
 
     let monLocation = monId.data.location
     let location = document.createElement('p')
-    location.innerText = monLocation
-    locationContainer.appendChild(location)
+    // location.innerText = monLocation
+    // locationContainer.appendChild(location)
 
-    // function getLocation(monLocation) {
-    //   for (let index = 0; index < monLocation.length; index++) {
-    //     let Location = monLocation[index];
-    //     console.log(monLocation)
-    //   }
-    // }
-    // getLocation()
+    function getLocation(monLocation) {
+      for (let i = 0; i < monLocation.length; i++) {
+        let info = monLocation[i];
+        console.log(info)
+      }
+    }
 
     // let monElement = monId.data
     // console.log(monElement)

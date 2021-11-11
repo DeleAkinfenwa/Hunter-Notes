@@ -88,6 +88,6 @@ Post-MVP
 ```
 
 ## **Change Log**
- -
+ - removing rewards section due to API not returning the required data
  -
  -  

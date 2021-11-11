@@ -69,7 +69,7 @@ p{
   background-color: cornsilk;
 }
 
-#weakResist {
+#ailments {
   width: 400px;
   height: 400px;
   display: inline-block;
@@ -78,7 +78,7 @@ p{
   background-color: cornsilk;
 }
 
-#eleAil {
+#elements {
   width: 400px;
   height: 400px;
   display: inline-block;
@@ -87,7 +87,7 @@ p{
   background-color: cornsilk;
 }
 
-#rewardLow {
+#weakness {
   width: 400px;
   height: 400px;
   display: inline-block;
@@ -96,7 +96,7 @@ p{
   background-color: cornsilk;
 }
 
-#rewardHigh {
+#resistance {
   width: 400px;
   height: 400px;
   display: inline-block;
