@@ -29,7 +29,7 @@ h3 {
 }
 
 p{
-  display: inline-block;
+  display: block;
   margin: 10px;
   font-size: 25px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -71,6 +71,10 @@ p{
     display: flex;
     justify-content: center;
   }
+  header{
+  background-image: linear-gradient(to right, rgba(0,0,0,1), #426e9c, rgba(0,0,0,1));
+
+  }
 }
 
 #description {
@@ -89,6 +93,7 @@ p{
 #location {
   width: 400px;
   height: 400px;
+  text-transform: capitalize;
   color: aliceblue;
   overflow: scroll;
   display: inline-block;
@@ -116,6 +121,7 @@ p{
   width: 400px;
   height: 400px;
   display: inline-block;
+  text-transform: capitalize;
   overflow: scroll;
   color: aliceblue;
   margin: 20px;
@@ -128,9 +134,9 @@ p{
 #weakness {
   width: 400px;
   height: 400px;
+  text-transform: capitalize;
   overflow: scroll;
   display: inline-block;
-
   color: aliceblue;
   margin: 20px;
   border: 4px solid rgb(107, 174, 225);
@@ -142,6 +148,7 @@ p{
 #resistance {
   width: 400px;
   height: 400px;
+  text-transform: capitalize;
   display: inline-block;
   overflow: scroll;
   color: aliceblue;

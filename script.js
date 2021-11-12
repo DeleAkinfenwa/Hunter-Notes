@@ -9,7 +9,7 @@ async function getMonster() {
     const searchResults = await axios.get('https://mhw-db.com/monsters');
 
     let monsterData = searchResults.data
-    console.log(monsterData)
+    // console.log(monsterData)
     setNameList(monsterData)
   } catch (error) {
     console.log(error)
@@ -47,29 +47,30 @@ nameInput.addEventListener('change', function (e) {
 })
 
 
+let descripContainer = document.querySelector('#description')
+let locationContainer = document.querySelector('#location')
+let weaknessContainer = document.querySelector('#weakness')
+let resistanceContainer = document.querySelector('#resistance')
+let elementContainer = document.querySelector('#elements')
+let ailmentContainer = document.querySelector('#ailments')
+
 async function getOneMon(monsterId) {
-
-
+  // removePrevious()
   try {
+
     let monId = await axios.get(`https://mhw-db.com/monsters/${monsterId}`)
     console.log(monId.data)
-
-    let descripContainer = document.querySelector('#description')
-    let locationContainer = document.querySelector('#location')
-    // let weakResistContainer = document.querySelector('#weakResist')
-    // let eleAilContainer = document.querySelector('#eleAil')
-    // let rewardLowContainer = document.querySelector('#rewardLow')
-    // let rewardHighContainer = document.querySelector('#rewardHigh')
-
 
     let monType = monId.data.type
     let type = document.createElement('p')
     type.innerText = monType
+    type.style = "text-transform: capitalize;"
     descripContainer.appendChild(type)
 
     let monSpecies = monId.data.species
     let species = document.createElement('p')
     species.innerText = monSpecies
+    species.style = "text-transform: capitalize;"
     descripContainer.appendChild(species)
 
     let monDescription = monId.data.description
@@ -77,43 +78,59 @@ async function getOneMon(monsterId) {
     description.innerText = monDescription
     descripContainer.appendChild(description)
 
-    let monLocation = monId.data.location
-    console.log(monLocation)
-    let location = document.createElement('p')
-    location.innerText = monLocation
-    locationContainer.appendChild(location)
-
-    function getLocation(monLocation) {
-      //   for (let i = 0; i < monLocation.length; i++) {
-      //     let info = monLocation[i];
-      //     console.log(info)
-      //   }
-
-      return monLocation === 'name'
-    }
-    console.log(monLocation.find(getLocation))
-    // let monElement = monId.data
-    // console.log(monElement)
+    let monLocations = monId.data.locations
+    monLocations.forEach(location => {
+      let locationDiv = document.createElement('p')
+      locationDiv.innerText = `${location.name}: zone ${location.zoneCount}`
+      locationContainer.appendChild(locationDiv)
+    });
 
 
-    // let monElement = monId.data.elements
+    let monWeakness = monId.data.weaknesses
+    monWeakness.forEach(weakness => {
+      let weaknessDiv = document.createElement('p')
+      weaknessDiv.innerText = `${weakness.element}: ${weakness.stars} stars`
+      weaknessContainer.appendChild(weaknessDiv)
+    });
 
+    let monElement = monId.data.elements
 
+    monElement.forEach(element => {
+      let elementDiv = document.createElement('p')
+      elementDiv.innerText = `${element}`
+      elementContainer.appendChild(elementDiv)
+    });
 
+    let monAilments = monId.data.ailments
+
+    monAilments.forEach(ailments => {
+      let ailmentsDiv = document.createElement('p')
+      ailmentsDiv.innerText = `${ailments.name}: ${ailments.description}`
+      ailmentContainer.appendChild(ailmentsDiv)
+    });
+
+    let monResistance = monId.data.resistances
+    monResistance.forEach(resistance => {
+      let resistanceDiv = document.createElement('p')
+      resistanceDiv.innerText = `${resistance.element}`
+      resistanceContainer.appendChild(resistanceDiv)
+    });
 
   } catch (err) {
     console.log(err)
   }
+
+  function removePrevious() {
+    descripContainer.data.innerHTML = '';
+    // locationContainer.innerHTML = "";
+    // weakResistContainer.innerHTML = "";
+    // eleAilContainer.innerHTML = yea"";
+    // rewardLowContainer.innerHTML = "";
+    // rewardHighContainer.innerHTML = "";
+  }
 }
 
-function removePrevious() {
-  descripContainer.innerHTML = ''
-  // locationContainer.innerHTML = "";
-  // weakResistContainer.innerHTML = "";
-  // eleAilContainer.innerHTML = "";
-  // rewardLowContainer.innerHTML = "";
-  // rewardHighContainer.innerHTML = "";
-}
+
 
 
 // async function fillMonsterData() {
