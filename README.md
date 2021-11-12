@@ -69,25 +69,35 @@ Post-MVP
 
 | Component | Priority | Estimated Time | Actual Time 
 | --- | :---: |  :---: | :---: | 
-| Core Code(HTML,CSS,etc) | H | 2 hrs| ___hrs |
-| Working with API | H | 3 hrs| ___hrs |
-| Create Header and search/dropbox | H | 3 hrs| ___hrs | 
-| Set up working search/dropbox with API| H | 2 hrs| ___hrs | 
-| Create algorithm to pull needed info | H | 4 hrs| ___hrs | 
-| Create divs for each info category | H | 2 hrs| ___hrs | 
-| Display info in appropriate sections | H | 4 hrs| ___hrs | 
-| Organizing info within each section | M | 4 hrs| ___hrs | 
-| Styling each section for desktop| L | 3 hrs| ___ hrs |
-| Styling each section for mobile| L | 2 hrs| ___hrs |
-| Total | ___ | 29 hrs| ___hrs | 
+| Core Code(HTML,CSS,etc) | H | 2 hrs| 5 hrs |
+| Working with API | H | 3 hrs| 3 hrs |
+| Create Header and search/dropbox | H | 3 hrs| 1 hrs | 
+| Set up working search/dropbox with API| H | 2 hrs| 1.5 hrs | 
+| Create algorithm to pull needed info | H | 4 hrs| 2.5 hrs | 
+| Create divs for each info category | H | 2 hrs| .5 hrs | 
+| Display info in appropriate sections | H | 4 hrs| 10 hrs | 
+| Organizing info within each section | M | 4 hrs| 3 hrs | 
+| Styling each section for desktop| L | 3 hrs| 3 hrs |
+| Styling each section for mobile| L | 2 hrs| .5 hrs |
+| Total | ___ | 29 hrs| 30 hrs | 
 
 ## **Code Snippet**
 
 ```
- N/A
+// populate dropdown
+function setNameList(monsterData) {
+  //for each name in the the search results, add them to the dropdown
+  for (i = 0; i < monsterData.length; i++) {
+    let options = monsterData[i].name
+    let dropdown = document.createElement('option')
+    dropdown.value = monsterData[i].id
+    dropdown.textContent = options
+    nameInput.appendChild(dropdown)
+  };
+};
 ```
 
 ## **Change Log**
- - removing rewards section due to API not returning the required data
+ - removing rewards section due to API not containing
  -
  -  

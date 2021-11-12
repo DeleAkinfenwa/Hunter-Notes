@@ -2,12 +2,10 @@ const nameInput = document.querySelector('#name-selector');
 const searchBtn = document.querySelector('#search')
 
 
-
 async function getMonster() {
   try {
     // get the API results of monster data
     const searchResults = await axios.get('https://mhw-db.com/monsters');
-
     let monsterData = searchResults.data
     // console.log(monsterData)
     setNameList(monsterData)
@@ -22,23 +20,12 @@ getMonster()
 function setNameList(monsterData) {
   //for each name in the the searach results, add them to the dropdown
   for (i = 0; i < monsterData.length; i++) {
-
     let options = monsterData[i].name
-
     let dropdown = document.createElement('option')
-
     dropdown.value = monsterData[i].id
     dropdown.textContent = options
-
-    // nameInput.addEventListener('change', function () {
-    //   getOneMon(dropdown.value)
-    // })
-
-
     nameInput.appendChild(dropdown)
   };
-
-
 };
 
 nameInput.addEventListener('change', function (e) {
@@ -55,7 +42,9 @@ let elementContainer = document.querySelector('#elements')
 let ailmentContainer = document.querySelector('#ailments')
 
 async function getOneMon(monsterId) {
-  // removePrevious()
+  removePrevious()
+
+
   try {
 
     let monId = await axios.get(`https://mhw-db.com/monsters/${monsterId}`)
@@ -93,21 +82,22 @@ async function getOneMon(monsterId) {
       weaknessContainer.appendChild(weaknessDiv)
     });
 
-    let monElement = monId.data.elements
 
+    let monElement = monId.data.elements
     monElement.forEach(element => {
       let elementDiv = document.createElement('p')
       elementDiv.innerText = `${element}`
       elementContainer.appendChild(elementDiv)
     });
 
-    let monAilments = monId.data.ailments
 
+    let monAilments = monId.data.ailments
     monAilments.forEach(ailments => {
       let ailmentsDiv = document.createElement('p')
       ailmentsDiv.innerText = `${ailments.name}: ${ailments.description}`
       ailmentContainer.appendChild(ailmentsDiv)
     });
+
 
     let monResistance = monId.data.resistances
     monResistance.forEach(resistance => {
@@ -119,36 +109,13 @@ async function getOneMon(monsterId) {
   } catch (err) {
     console.log(err)
   }
-
-  function removePrevious() {
-    descripContainer.data.innerHTML = '';
-    // locationContainer.innerHTML = "";
-    // weakResistContainer.innerHTML = "";
-    // eleAilContainer.innerHTML = yea"";
-    // rewardLowContainer.innerHTML = "";
-    // rewardHighContainer.innerHTML = "";
-  }
 }
 
-
-
-
-// async function fillMonsterData() {
-//   try {
-//     searchResults = await axios.get(`https://mhw-db.com/monsters`);
-//     let monsterData = searchResults.data
-//     let descripContainer = document.querySelector('#description')
-
-
-//     for (let i = 0; i < monsterData.length; i++) {
-//       let monDescription = monsterData[i].description
-//       console.log(monDescription)
-//       let description = document.createElement('p')
-//       description.innerText = monDescription
-//       descripContainer.appendChild(description)
-
-//     }
-//   } catch (err) {
-//     console.log(err);
-//   }
-// }
+function removePrevious() {
+  descripContainer.innerText = ''
+  locationContainer.innerText = ''
+  weaknessContainer.innerText = ''
+  resistanceContainer.innerText = ''
+  ailmentContainer.innerText = ''
+  elementContainer.innerText = ''
+}
