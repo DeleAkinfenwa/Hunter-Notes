@@ -1,33 +1,42 @@
 body {
-  background-color: blue;
+  background-image: url('./Project_Imgs/MHBR.png');
+  background-size: cover;
   text-align: center;
-
+  font-family: 'Luckiest Guy', cursive;
 }
 header{
-  background-color: grey;
+  background-image: linear-gradient(to right, rgba(0,0,0,0), #426e9c, rgba(0,0,0,0));
+  
   text-align: center;
   height: 200px;
-
   flex: auto;
   
 }
-h1 {
-  background-color: darkgreen;
-  
+h1 { 
+  color: aliceblue;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 30px;
+  font-size: 90px;
 }
 
 h3 {
   font-size: xx-large;
-  background-color: fuchsia;
+  background-image: linear-gradient(to right, rgba(0,0,0,0), #426e9c, rgba(0,0,0,0));
+  padding-top: 10px;
+  font-family: 'Luckiest Guy', cursive;
+
 }
 
 p{
   display: inline-block;
-  margin: 20px;
+  margin: 10px;
   font-size: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 .searchbar{
-  background-color: darkred;
+
   width: 300px;
   height: 75px;
   margin: 0 auto;
@@ -35,19 +44,33 @@ p{
 }
 
 #name-selector {
-  margin-top:20px;
-  size;
+  margin-top: 20px;
+  min-width: 150px;
+  
+  font-size: 24px;
 }
 
 #search {
 
 }
 
+
+
 .monsterData{
-  background-color: darkorange;
+  background-image: radial-gradient(to center, rgba(0,0,0,0), #426e9c, rgba(0,0,0,0)  )
   width: 90%;
-  margin: 0 5%;
-  
+  margin: 0% 5%;
+  display: flex;
+    align-items:baseline;
+    flex-wrap: wrap; 
+}
+
+@media screen and (max-width: 750px) {
+  .monsterData{
+    margin: 15% 5%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 #description {
@@ -55,52 +78,76 @@ p{
   height: 400px;
   font-size: 20px;
   display: inline-block;
+  color: aliceblue;
+  overflow: scroll;
   margin: 20px;
-  background-color: cornsilk;
-  border: 4px solid black;
+  background-color: rgb(46, 46, 46);
+  opacity: 85%;
+  border: 4px solid rgb(107, 174, 225);
 }
 
 #location {
   width: 400px;
   height: 400px;
+  color: aliceblue;
+  overflow: scroll;
   display: inline-block;
   margin: 20px;
-  border: 4px solid black;
-  background-color: cornsilk;
+  border: 4px solid rgb(107, 174, 225);
+  opacity: 85%;
+  background-color: rgb(46, 46, 46);
+
 }
 
 #ailments {
   width: 400px;
   height: 400px;
   display: inline-block;
+  overflow: scroll;
+  color: aliceblue;
   margin: 20px;
-  border: 4px solid black;
-  background-color: cornsilk;
+  border: 4px solid rgb(107, 174, 225);
+  opacity: 85%;
+  background-color: rgb(46, 46, 46);
+
 }
 
 #elements {
   width: 400px;
   height: 400px;
   display: inline-block;
+  overflow: scroll;
+  color: aliceblue;
   margin: 20px;
-  border: 4px solid black;
-  background-color: cornsilk;
+  border: 4px solid rgb(107, 174, 225);
+  opacity: 85%;
+  background-color: rgb(46, 46, 46);
+
 }
 
 #weakness {
   width: 400px;
   height: 400px;
+  overflow: scroll;
   display: inline-block;
+
+  color: aliceblue;
   margin: 20px;
-  border: 4px solid black;
-  background-color: cornsilk;
+  border: 4px solid rgb(107, 174, 225);
+  opacity: 85%;
+  background-color: rgb(46, 46, 46);
+
 }
 
 #resistance {
   width: 400px;
   height: 400px;
   display: inline-block;
+  overflow: scroll;
+  color: aliceblue;
   margin: 20px;
-  border: 4px solid black;
-  background-color: cornsilk;
+  border: 4px solid rgb(107, 174, 225);
+  opacity: 85%;
+  background-color: rgb(46, 46, 46);
+
 }

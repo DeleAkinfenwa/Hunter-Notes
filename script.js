@@ -48,7 +48,7 @@ nameInput.addEventListener('change', function (e) {
 
 
 async function getOneMon(monsterId) {
-  // removePrevious();
+
 
   try {
     let monId = await axios.get(`https://mhw-db.com/monsters/${monsterId}`)
@@ -78,17 +78,20 @@ async function getOneMon(monsterId) {
     descripContainer.appendChild(description)
 
     let monLocation = monId.data.location
+    console.log(monLocation)
     let location = document.createElement('p')
-    // location.innerText = monLocation
-    // locationContainer.appendChild(location)
+    location.innerText = monLocation
+    locationContainer.appendChild(location)
 
     function getLocation(monLocation) {
-      for (let i = 0; i < monLocation.length; i++) {
-        let info = monLocation[i];
-        console.log(info)
-      }
-    }
+      //   for (let i = 0; i < monLocation.length; i++) {
+      //     let info = monLocation[i];
+      //     console.log(info)
+      //   }
 
+      return monLocation === 'name'
+    }
+    console.log(monLocation.find(getLocation))
     // let monElement = monId.data
     // console.log(monElement)
 
@@ -104,7 +107,7 @@ async function getOneMon(monsterId) {
 }
 
 function removePrevious() {
-  // descripContainer.innerHTML = "";
+  descripContainer.innerHTML = ''
   // locationContainer.innerHTML = "";
   // weakResistContainer.innerHTML = "";
   // eleAilContainer.innerHTML = "";

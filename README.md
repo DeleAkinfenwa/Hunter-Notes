@@ -69,7 +69,7 @@ Post-MVP
 
 | Component | Priority | Estimated Time | Actual Time 
 | --- | :---: |  :---: | :---: | 
-| Core Code(HTML,CSS,etc) | H | 2 hrs| 1.5 hrs |
+| Core Code(HTML,CSS,etc) | H | 2 hrs| ___hrs |
 | Working with API | H | 3 hrs| ___hrs |
 | Create Header and search/dropbox | H | 3 hrs| ___hrs | 
 | Set up working search/dropbox with API| H | 2 hrs| ___hrs | 
@@ -77,7 +77,7 @@ Post-MVP
 | Create divs for each info category | H | 2 hrs| ___hrs | 
 | Display info in appropriate sections | H | 4 hrs| ___hrs | 
 | Organizing info within each section | M | 4 hrs| ___hrs | 
-| Styling each section for desktop| L | 3 hrs| 1.5 hrs |
+| Styling each section for desktop| L | 3 hrs| ___ hrs |
 | Styling each section for mobile| L | 2 hrs| ___hrs |
 | Total | ___ | 29 hrs| ___hrs | 
 
