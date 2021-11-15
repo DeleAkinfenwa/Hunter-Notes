@@ -15,7 +15,6 @@ async function getMonster() {
 }
 getMonster()
 
-
 // populate dropdown
 function setNameList(monsterData) {
   //for each name in the the searach results, add them to the dropdown
@@ -33,7 +32,6 @@ nameInput.addEventListener('change', function (e) {
   getOneMon(e.target.value)
 })
 
-
 let descripContainer = document.querySelector('#description')
 let locationContainer = document.querySelector('#location')
 let weaknessContainer = document.querySelector('#weakness')
@@ -45,9 +43,10 @@ async function getOneMon(monsterId) {
   removePrevious()
 
   try {
-
+    //  plug in the id for the API search 
     let monId = await axios.get(`https://mhw-db.com/monsters/${monsterId}`)
 
+    // get specific parts of the monster data and append to appropriate section 
     let monType = monId.data.type
     let type = document.createElement('p')
     type.innerText = monType
@@ -68,10 +67,9 @@ async function getOneMon(monsterId) {
     let monLocations = monId.data.locations
     monLocations.forEach(location => {
       let locationDiv = document.createElement('p')
-      locationDiv.innerText = `${location.name}: zone ${location.zoneCount}`
+      locationDiv.innerText = `${location.name}: Zone ${location.zoneCount}`
       locationContainer.appendChild(locationDiv)
     });
-
 
     let monWeakness = monId.data.weaknesses
     monWeakness.forEach(weakness => {
@@ -80,7 +78,6 @@ async function getOneMon(monsterId) {
       weaknessContainer.appendChild(weaknessDiv)
     });
 
-
     let monElement = monId.data.elements
     monElement.forEach(element => {
       let elementDiv = document.createElement('p')
@@ -88,14 +85,12 @@ async function getOneMon(monsterId) {
       elementContainer.appendChild(elementDiv)
     });
 
-
     let monAilments = monId.data.ailments
     monAilments.forEach(ailments => {
       let ailmentsDiv = document.createElement('p')
       ailmentsDiv.innerText = `${ailments.name}: ${ailments.description}`
       ailmentContainer.appendChild(ailmentsDiv)
     });
-
 
     let monResistance = monId.data.resistances
     monResistance.forEach(resistance => {

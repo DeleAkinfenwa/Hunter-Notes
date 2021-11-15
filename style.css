@@ -4,14 +4,14 @@ body {
   text-align: center;
   font-family: 'Luckiest Guy', cursive;
 }
-header{
+
+header {
   background-image: linear-gradient(to right, rgba(0,0,0,0), #426e9c, rgba(0,0,0,0));
-  
   text-align: center;
   height: 200px;
   flex: auto;
-  
 }
+
 h1 { 
   color: aliceblue;
   margin-top: 0px;
@@ -25,36 +25,26 @@ h3 {
   background-image: linear-gradient(to right, rgba(0,0,0,0), #426e9c, rgba(0,0,0,0));
   padding-top: 10px;
   font-family: 'Luckiest Guy', cursive;
-
 }
 
-p{
+p {
   display: block;
   margin: 10px;
   font-size: 25px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
-.searchbar{
 
+.searchbar{
   width: 300px;
   height: 75px;
   margin: 0 auto;
-
 }
 
 #name-selector {
   margin-top: 20px;
   min-width: 150px;
-  
   font-size: 24px;
 }
-
-#search {
-
-}
-
-
 
 .monsterData{
   background-image: radial-gradient(to center, rgba(0,0,0,0), #426e9c, rgba(0,0,0,0)  )
@@ -65,7 +55,7 @@ p{
     flex-wrap: wrap; 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .monsterData{
     margin: 15% 5%;
     display: flex;
@@ -73,7 +63,6 @@ p{
   }
   header{
   background-image: linear-gradient(to right, rgba(0,0,0,1), #426e9c, rgba(0,0,0,1));
-
   }
 }
 
@@ -90,11 +79,9 @@ p{
   border: 4px solid rgb(107, 174, 225);
 }
 
-
 .location {
   width: 400px;
   height: 400px;
-  text-transform: capitalize;
   color: aliceblue;
   overflow: scroll;
   display: inline-block;
@@ -102,7 +89,6 @@ p{
   border: 4px solid rgb(107, 174, 225);
   opacity: 85%;
   background-color: rgb(46, 46, 46);
-
 }
 
 .ailments {
@@ -115,7 +101,6 @@ p{
   border: 4px solid rgb(107, 174, 225);
   opacity: 85%;
   background-color: rgb(46, 46, 46);
-
 }
 
 .elements {
@@ -129,7 +114,6 @@ p{
   border: 4px solid rgb(107, 174, 225);
   opacity: 85%;
   background-color: rgb(46, 46, 46);
-
 }
 
 .weakness {
@@ -143,7 +127,6 @@ p{
   border: 4px solid rgb(107, 174, 225);
   opacity: 85%;
   background-color: rgb(46, 46, 46);
-
 }
 
 .resistance {
@@ -157,5 +140,4 @@ p{
   border: 4px solid rgb(107, 174, 225);
   opacity: 85%;
   background-color: rgb(46, 46, 46);
-
 }
