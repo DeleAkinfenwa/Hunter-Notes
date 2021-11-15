@@ -2,7 +2,7 @@
 
 ## **Project Name**
 
-Hunter Notes
+[Hunter Notes](https://deleakinfenwa.github.io/Hunter-Notes/)
 
 ## **Project Description**
 
