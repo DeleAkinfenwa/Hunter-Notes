@@ -29,7 +29,7 @@ function setNameList(monsterData) {
 };
 
 nameInput.addEventListener('change', function (e) {
-  console.log(e.target.value)
+  // get the id of the selected monster 
   getOneMon(e.target.value)
 })
 
@@ -44,11 +44,9 @@ let ailmentContainer = document.querySelector('#ailments')
 async function getOneMon(monsterId) {
   removePrevious()
 
-
   try {
 
     let monId = await axios.get(`https://mhw-db.com/monsters/${monsterId}`)
-    console.log(monId.data)
 
     let monType = monId.data.type
     let type = document.createElement('p')

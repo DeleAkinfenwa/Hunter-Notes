@@ -34,9 +34,9 @@ The mobile verison will have a very similar look but the lay out will have each 
 
 MVP
 
-- [ ] connect API to application
-- [ ] Allow user to search a monster name via typing or using the dropbox
-- [ ] Display monster data in appropriate sections
+- [x] connect API to application
+- [x] Allow user to search a monster name via typing or using the dropbox
+- [x] Display monster data in appropriate sections
 
 
 Post-MVP  

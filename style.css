@@ -65,7 +65,7 @@ p{
     flex-wrap: wrap; 
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .monsterData{
     margin: 15% 5%;
     display: flex;
